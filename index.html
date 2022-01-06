@@ -9,64 +9,68 @@
     <title>Exemplo</title>
 </head>
 <body>
-    <ul class="bg-light fixed-top nav nav-tabs d-flex flex-row justify-content-end">
+  <section class="section">
+    <header class="header">
+      <img src="img/imagemsite.png" alt="">
+      <ul class="bg-light fixed-top nav nav-tabs d-flex flex-row justify-content-end">
         <li class="nav-item ">
-          <a class="nav-link " id="a0" aria-current="page" href="#">Active</a>
+        <a class="nav-link " id="a0" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link " id="a1" href="#div1">Link</a>
+        <a class="nav-link " id="a1" href="#div1">Link</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" id="a2" href="#div2">Link</a>
+        <a class="nav-link" id="a2" href="#div2">Link</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" id="a3" href="#div3">Disabled</a>
+        <a class="nav-link" id="a3" href="#div3">Disabled</a>
         </li>
       </ul>
+    </header>
     <main style="margin-top: 50px;">
-        <div style="margin-bottom: 400px;" id="div1">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat alias voluptatem. Voluptates officiis quam molestias, labore corrupti aliquid eveniet nam odio non cum reprehenderit deleniti. Nulla obcaecati modi beatae.</p>
-        </div>
-        <br>
-
-        <div style="margin: 200px 0 400px 0;" id="div2">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, corporis nihil asperiores quos earum laborum debitis. Laboriosam, maxime odit! Sequi tempore a placeat dignissimos corporis architecto ratione aut ullam delectus.</p>
-        </div>
-        <br>
-        <div style="margin: 200px 0 400px 0;" id="div3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam sapiente nam? Debitis excepturi recusandae mollitia veniam non eos incidunt explicabo error. Nihil dolorem maxime deserunt, facere excepturi quam repellat!</p>
-        </div>
+      <div id="div1">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat alias voluptatem. Voluptates officiis quam molestias, labore corrupti aliquid eveniet nam odio non cum reprehenderit deleniti. Nulla obcaecati modi beatae.</p>
+      </div>
+      <br>
+      <div id="div2">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, corporis nihil asperiores quos earum laborum debitis. Laboriosam, maxime odit! Sequi tempore a placeat dignissimos corporis architecto ratione aut ullam delectus.</p>
+      </div>
+      <br>
+      <div id="div3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam sapiente nam? Debitis excepturi recusandae mollitia veniam non eos incidunt explicabo error. Nihil dolorem maxime deserunt, facere excepturi quam repellat!</p>
+      </div>
     </main>
     <footer>
-        Rodapé
+      Rodapé
     </footer>
+  </section>
 
-    <script>
-        let a0 = document.getElementById("a0")
-        let a1 = document.getElementById("a1")
-        let a2 = document.getElementById("a2")
-        let a3 = document.getElementById("a3")
+  <script>
+  let a0 = document.getElementById("a0")
+  let a1 = document.getElementById("a1")
+  let a2 = document.getElementById("a2")
+  let a3 = document.getElementById("a3")
 
-        a0.classList.add("active")
+  a0.classList.add("active")
 
-        let link_ativo = document.getElementsByClassName("active")
+  let link_ativo = document.getElementsByClassName("active")
 
-        function classe(id1, id2) {
-          
-          let ax1 = document.getElementById(id1)
-          let ax2 = document.getElementById(id2)
+  function classe(id1, id2) {
 
-          ax1.classList.remove("active")
-          ax2.classList.add("active")
-          
-        }
+  let ax1 = document.getElementById(id1)
+  let ax2 = document.getElementById(id2)
 
-        a0.addEventListener("click", () => {classe(link_ativo[0].id, a0.id)})
-        a1.addEventListener("click", () => {classe(link_ativo[0].id, a1.id)})
-        a2.addEventListener("click", () => {classe(link_ativo[0].id, a2.id)})
-        a3.addEventListener("click", () => {classe(link_ativo[0].id, a3.id)})
-    </script>
+  ax1.classList.remove("active")
+  ax2.classList.add("active")
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  }
+
+  a0.addEventListener("click", () => {classe(link_ativo[0].id, a0.id)})
+  a1.addEventListener("click", () => {classe(link_ativo[0].id, a1.id)})
+  a2.addEventListener("click", () => {classe(link_ativo[0].id, a2.id)})
+  a3.addEventListener("click", () => {classe(link_ativo[0].id, a3.id)})
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
